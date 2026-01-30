@@ -18,22 +18,22 @@
     - [x] Install **Zustand** for complex client-side state (global modals, user preferences).
 - [x] **Iconography:** Install `lucide-react` for consistent SVG icons.
 
-## Phase 2: Database & Authentication (Supabase)
+## Phase 2: Database & Authentication (Supabase) ✅
 
 **Goal:** Implement a multi-tenant schema with robust security.
 
-- [ ] **Supabase Setup:** Initialize a new Supabase project.
-- [ ] **Authentication:**
-    - [ ] Configure GitHub and Email/Password authentication.
-    - [ ] Create a `Middleware.ts` file to protect dashboard routes.
-- [ ] **Schema Design (SQL/Migrations):**
-    - [ ] Create `profiles` table (linked to `auth.users`).
-    - [ ] Create `teams` table (workspace).
-    - [ ] Create `issues` table (title, description, status, priority).
-    - [ ] Create `statuses` table (Backlog, Todo, In Progress, Done).
+- [x] **Supabase Setup:** Initialize a new Supabase project.
+- [x] **Authentication:**
+    - [x] Configure GitHub and Email/Password authentication.
+    - [x] Create a `Middleware.ts` file to protect dashboard routes.
+- [x] **Schema Design (SQL/Migrations):**
+    - [x] Create `profiles` table (linked to `auth.users`).
+    - [x] Create `teams` table (workspace).
+    - [x] Create `issues` table (title, description, status, priority).
+    - [x] Create `statuses` table (Backlog, Todo, In Progress, Done).
 - [ ] **Row Level Security (RLS):**
     - [ ] Write policies ensuring users can only see issues in their assigned teams.
-- [ ] **Type Generation:** Configure Supabase CLI to generate TypeScript types from the database schema automatically.
+- [x] **Type Generation:** Configure Supabase CLI to generate TypeScript types from the database schema automatically.
 
 ## Phase 3: Application Shell & Layout
 
