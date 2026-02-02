@@ -35,16 +35,16 @@
     - [x] Write policies ensuring users can only see issues in their assigned teams.
 - [x] **Type Generation:** Configure Supabase CLI to generate TypeScript types from the database schema automatically.
 
-## Phase 3: Application Shell & Layout
+## Phase 3: Application Shell & Layout ✅
 
 **Goal:** Create the persistent UI structure that feels like a native app.
 
-- [ ] **Sidebar Layout:**
-    - [ ] Build a collapsible sidebar with navigation links (Inbox, Issues, Views).
-    - [ ] Implement active state styling.
-- [ ] **User Dropdown:** Create a profile menu with theme toggle (System/Dark/Light) and logout.
-- [ ] **Team Switcher:** UI to switch between different workspaces/teams.
-- [ ] **Animations:** Use **Framer Motion** for subtle layout transitions when the sidebar collapses/expands.
+- [x] **Sidebar Layout:**
+    - [x] Build a collapsible sidebar with navigation links (Inbox, Issues, Views).
+    - [x] Implement active state styling.
+- [x] **User Dropdown:** Create a profile menu with theme toggle (System/Dark/Light) and logout.
+- [x] **Team Switcher:** UI to switch between different workspaces/teams.
+- [x] **Animations:** Use **Framer Motion** for subtle layout transitions when the sidebar collapses/expands.
 
 ## Phase 4: Core Issue Management
 
