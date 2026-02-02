@@ -31,8 +31,8 @@
     - [x] Create `teams` table (workspace).
     - [x] Create `issues` table (title, description, status, priority).
     - [x] Create `statuses` table (Backlog, Todo, In Progress, Done).
-- [ ] **Row Level Security (RLS):**
-    - [ ] Write policies ensuring users can only see issues in their assigned teams.
+- [x] **Row Level Security (RLS):**
+    - [x] Write policies ensuring users can only see issues in their assigned teams.
 - [x] **Type Generation:** Configure Supabase CLI to generate TypeScript types from the database schema automatically.
 
 ## Phase 3: Application Shell & Layout
