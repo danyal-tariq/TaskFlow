@@ -1,5 +1,7 @@
 import { Header } from "@/components/layout/header";
 import { Sidebar } from "@/components/layout/sidebar";
+import { CommandPaletteWrapper } from "@/components/layout/command-palette-wrapper";
+import { CreateIssueModalWrapper } from "@/components/issues/create-issue-modal-wrapper";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 
@@ -23,6 +25,8 @@ export default async function DashboardLayout({
                     {children}
                 </main>
             </div>
+            <CommandPaletteWrapper />
+            <CreateIssueModalWrapper />
         </div>
     );
 }

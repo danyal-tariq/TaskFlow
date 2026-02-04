@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-interface UIState{
+interface UIState {
     sidebarCollapsed: boolean;
     toggleSidebar: () => void;
 
@@ -8,13 +8,22 @@ interface UIState{
     isCreateIssueOpen: boolean;
     openCreateIssue: () => void;
     closeCreateIssue: () => void;
+
+    //Command Palette
+    isCommandPaletteOpen: boolean;
+    openCommandPalette: () => void;
+    closeCommandPalette: () => void;
 }
 
 export const useUIStore = create<UIState>((set) => ({
     sidebarCollapsed: false,
     toggleSidebar: () => set((state) => ({ sidebarCollapsed: !state.sidebarCollapsed })),
-    
+
     isCreateIssueOpen: false,
-    openCreateIssue:()=>set((state)=>({isCreateIssueOpen:true})),
-    closeCreateIssue:()=>set((state)=>({isCreateIssueOpen:false})),
+    openCreateIssue: () => set((state) => ({ isCreateIssueOpen: true })),
+    closeCreateIssue: () => set((state) => ({ isCreateIssueOpen: false })),
+
+    isCommandPaletteOpen: false,
+    openCommandPalette: () => set({ isCommandPaletteOpen: true }),
+    closeCommandPalette: () => set({ isCommandPaletteOpen: false }),
 }))
