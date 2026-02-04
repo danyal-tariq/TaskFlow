@@ -46,37 +46,37 @@
 - [x] **Team Switcher:** UI to switch between different workspaces/teams.
 - [x] **Animations:** Use **Framer Motion** for subtle layout transitions when the sidebar collapses/expands.
 
-## Phase 4: Core Issue Management
+## Phase 4: Core Issue Management ✅
 
 **Goal:** Build the CRUD functionality with instant feedback.
 
-- [ ] **Issue Creation Modal:**
-    - [ ] Create a global modal triggered by `C` key (keyboard shortcut).
-    - [ ] Implement a rich text editor (Tiptap or simple textarea) for descriptions.
-    - [ ] Use **React Hook Form** + **Zod** for validation.
-- [ ] **Issue List View:**
-    - [ ] Create a virtualized list (if anticipating many issues) or standard table.
-    - [ ] Display issue identifier (e.g., TEAM-12), title, and priority icon.
-- [ ] **Issue Detail View:**
-    - [ ] Create a dynamic route `/team/[issueId]`.
-    - [ ] Implement editable fields (click to edit title/description).
+- [x] **Issue Creation Modal:**
+    - [x] Create a global modal triggered by `C` key (keyboard shortcut).
+    - [x] Implement a rich text editor (Tiptap or simple textarea) for descriptions.
+    - [x] Use **React Hook Form** + **Zod** for validation.
+- [x] **Issue List View:**
+    - [x] Create a virtualized list (if anticipating many issues) or standard table.
+    - [x] Display issue identifier (e.g., TEAM-12), title, and priority icon.
+- [x] **Issue Detail View:**
+    - [x] Create a dynamic route `/team/[issueId]`.
+    - [x] Implement editable fields (click to edit title/description).
 
 ## Phase 5: The "Senior" UX Features (Critical)
 
 **Goal:** Differentiate this project from a standard CRUD app using advanced UX patterns.
 
-- [ ] **Optimistic Updates (TanStack Query):**
-    - [ ] Implementation: When a user creates/updates an issue, update the UI immediately before the server responds.
-    - [ ] Rollback logic: Revert UI if the server request fails.
+- [x] **Optimistic Updates (TanStack Query):**
+    - [x] Implementation: When a user creates/updates an issue, update the UI immediately before the server responds.
+    - [x] Rollback logic: Revert UI if the server request fails.
 - [ ] **Command Palette (Cmd+K):**
     - [ ] Install `cmdk` package.
     - [ ] Implement global search for Issues.
     - [ ] Implement actions (Change Theme, Create Issue, Go to Team).
-- [ ] **Keyboard Shortcuts:**
-    - [ ] Install `react-hotkeys-hook`.
-    - [ ] Bind `C` to Create Issue.
-    - [ ] Bind `Esc` to close modals.
-    - [ ] Bind `Ctrl+Enter` to submit forms.
+- [x] **Keyboard Shortcuts:**
+    - [x] ~~Install `react-hotkeys-hook`~~ (Built custom hook).
+    - [x] Bind `C` to Create Issue.
+    - [x] Bind `Esc` to close modals.
+    - [x] Bind `Ctrl+Enter` to submit forms.
 - [ ] **Toast Notifications:** Implement a custom toast system (or use `sonner`) for success/error states, stacked in the corner.
 
 ## Phase 6: Kanban Board & Drag-and-Drop
@@ -104,8 +104,8 @@
 
 **Goal:** Production readiness.
 
-- [ ] **Loading States:** Create Skeleton screens (shimmer effect) for initial data load.
-- [ ] **Empty States:** Design helpful illustrations when a list has no issues.
+- [x] **Loading States:** Create Skeleton screens (shimmer effect) for initial data load.
+- [x] **Empty States:** Design helpful illustrations when a list has no issues.
 - [ ] **Metadata:** Configure SEO tags and Open Graph images.
 - [ ] **CI/CD:**
     - [ ] Set up GitHub Actions to run `npm run lint` and `npm run type-check` on push.
